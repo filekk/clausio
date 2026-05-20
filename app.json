@@ -1,6 +1,11 @@
 {
   "expo": {
+    "scheme": "clausio",
     "name": "clausio",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "slug": "clausio",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,10 +26,12 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.filekk.clausio"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      "expo-secure-store",
+      "expo-router"
+    ]
   }
 }
