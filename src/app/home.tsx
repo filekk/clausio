@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { View, Text, Button } from "react-native";
 import { supabase } from "../lib/supabase";
 import { router } from "expo-router";
+import "../../global.css";
 
 export default function Home() {
   const [email, setEmail] = useState<string | null>(null);
@@ -26,6 +27,7 @@ export default function Home() {
       <Text>{email}</Text>
 
       <Button title="Logout" onPress={logout} />
+      <Text className="text-xl font-bold text-blue-500">FIGON!</Text>
     </View>
   );
 }

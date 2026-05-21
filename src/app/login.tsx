@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { View, Text, TextInput, Button } from "react-native";
 import { supabase } from "../lib/supabase";
 import { router } from "expo-router";
-import GoogleLogin from "../components/google-login-button";
 import * as WebBrowser from "expo-web-browser";
 
 export default function Login() {
@@ -51,7 +50,6 @@ export default function Login() {
       />
 
       <Button title="Login" onPress={login} />
-      <GoogleLogin />
 
       <Button title="Go to signup" onPress={() => router.push("/signup")} />
     </View>
